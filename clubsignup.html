@@ -1,30 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <form>
-<input>
-type= “ ” (email, password, submit)
-name = “ ”
-id = “ ”
-value = “ ”
-placeholder = “ ”
-method = “get”
-method = “post”
-action = “ ”
-<label for = “ ”>
-<input type =“radio”>
-<select>
-<option>
-Value = “ “ 
-<textarea>
-cols= “ ”
-rows= “ ”
+<html>
 
-    
+<head>
+    <meta charset="utf-8">
+    <title>sport Club</title>
+</head>
+
+<body>
+
+    <h1>Athlete Club</h1>
+
+    <p>Join the greatest club for people who love doing absolutely nothing.</p>
+
+    <form method="get">
+
+       
+        <label for="name">Your Name:</label>
+        <input type="text"
+               id="name"
+               name="username"
+               placeholder="Enter your name"
+               required>
+
+        <br><br>
+
+        
+        <label for="email">Your Email:</label>
+        <input type="email"
+               id="email"
+               name="email"
+               placeholder="example@email.com">
+
+        <br><br>
+
+       
+        <p>How good are you at napping?</p>
+
+        <label for="beginner">Beginner</label>
+        <input type="radio"
+               id="beginner"
+               name="nap_level"
+               value="beginner">
+
+        <label for="expert">Expert</label>
+        <input type="radio"
+               id="expert"
+               name="nap_level"
+               value="expert">
+
+        <br><br>
+
+        
+        <label for="nap">Favorite place to nap:</label>
+
+        <select id="nap" name="nap_place">
+            <option value="bed">Bed</option>
+            <option value="couch">Couch</option>
+            <option value="class">Class</option>
+            <option value="anywhere">Anywhere</option>
+        </select>
+
+        <br><br>
+
+        
+        <p>Why should we let you join?</p>
+
+        <textarea
+            name="reason"
+            rows="5"
+            cols="40"
+            placeholder="Convince us..."></textarea>
+
+        <br><br>
+
+        <input type="submit" value="Join the Nap Club">
+
+    </form>
+
 </body>
+
 </html>
