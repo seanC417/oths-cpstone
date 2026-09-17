@@ -1,30 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <form>
-<input>
-type= “ ” (email, password, submit)
-name = “ ”
-id = “ ”
-value = “ ”
-placeholder = “ ”
-method = “get”
-method = “post”
-action = “ ”
-<label for = “ ”>
-<input type =“radio”>
-<select>
-<option>
-Value = “ “ 
-<textarea>
-cols= “ ”
-rows= “ ”
+<html>
 
-    
+<head>
+    <meta charset="utf-8">
+    <title>Athlete Club</title>
+</head>
+
+<body>
+
+    <h1>Athlete Club</h1>
+
+    <p>Join the greatest club for people who love doing sport.</p>
+
+    <form method="get">
+
+       
+        <label for="name">Your Name:</label>
+        <input type="text"
+               id="name"
+               name="username"
+               placeholder="Enter your name"
+               required>
+
+        <br><br>
+
+        
+        <label for="email">Your Email:</label>
+        <input type="email"
+               id="email"
+               name="email"
+               placeholder="example@email.com">
+
+        <br><br>
+
+       
+        <p>do you like sports?</p>
+        
+        <label for="yes">yes</label>
+        <input type="radio"
+               id="expert"
+               name="sport"
+               value="expert">
+
+        <label for="no">no</label>
+        <input type="radio"
+               id="beginner"
+               name="sport"
+               value="no">
+
+        <br><br>
+
+        
+        <label for="sport">what is your favorite sports:</label>
+
+        <select id="sport" name="favrite_sport">
+            <option value="sport">Basketball</option>
+            <option value="sport">Soccer</option>
+            <option value="sport">American football</option>
+            <option value="sport">others...</option>
+        </select>
+
+        <br><br>
+
+        
+        <p>Why should we let you join?</p>
+
+        <textarea
+            placeholder="Convince us..."></textarea>
+
+        <br><br>
+
+        <input type="submit" value="Join the Athlete Club">
+
+    </form>
+
 </body>
+
 </html>
