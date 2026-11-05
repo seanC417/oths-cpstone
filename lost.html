@@ -7,7 +7,118 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   </head>
   <body>
-    <h1>lost item</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <div class="container">
+
+    <h1 class="display-3 text-center text-bg-warning">
+        LOST SHOES!
+    </h1>
+
+    <p class="text-center">
+        I lost my favorite shoes!
+    </p>
+
+    <div class="border border-primary p-3">
+        <h2>Information</h2>
+        <p>My shoes went missing yesterday.</p>
+        <p>Last seen near my bedroom.</p>
+        <p>I have searched everywhere for them.</p>
+        <p>Reward: $1 if you find my shoes!</p>
+    </div>
+
+    <h2>Pictures of My Shoes</h2>
+    <div id="shoes" class="carousel slide">
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTITPkQdTxzy5LE5Q-COwGVEveQidtjwlau-kJRFSU2ew&s=10"
+                     width="1500"
+                     height="600"
+                     alt="shoes">
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKGvV_mfg5LLV0VzKgALw9E3XpbMD2V-WhzUtSUvMYww&s=10"
+                     width="1500"
+                     height="600"
+                     alt="Shoes2">
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaz6JSqB6yN89v-AMK4aRI9XnckDUpj94SY9l3IxOqQA&s=10"
+                     width="1500"
+                     height="600"
+                     alt="shoes3">
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev"
+                type="button"
+                data-bs-target="#shoes"
+                data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next"
+                type="button"
+                data-bs-target="#shoes"
+                data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+
+    <h2>Help Me Find My Shoes!</h2>
+
+
+    <a href="https://www.google.com"
+       class="btn btn-primary btn-lg active">
+        Search Online
+    </a>
+
+    <a href="https://www.youtube.com"
+       class="btn btn-success btn-sm">
+        Watch Videos
+    </a>
+
+    <button class="btn btn-secondary" disabled>
+        Shoes Found
+    </button>
+
+    <h2>Report My Shoes</h2>
+
+    <form>
+        <label for="name" class="form-label">
+            Your Name:
+        </label>
+        <input type="text" id="name" class="form-control">
+
+        <p>Where did you see my shoes?</p>
+
+        <select class="form-select">
+            <option>School</option>
+            <option>Home</option>
+            <option>Park</option>
+            <option>Other</option>
+        </select>
+
+        <p>More Information:</p>
+
+        <textarea class="form-control"></textarea>
+
+        <p></p>
+
+        <button type="button" class="btn btn-primary">
+            Submit
+        </button>
+    </form>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
   </body>
 </html>
